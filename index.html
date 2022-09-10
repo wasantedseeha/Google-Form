@@ -26,7 +26,7 @@
   <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     /// Config Your LIFF ID Here
-    const liffId = "";
+    const liffId = "1653945863-b5WQnd69";
     /// Config Your LIFF ID Here
     liff.ready
       .then(() => {
@@ -34,13 +34,13 @@
           return liff.getProfile();
         } else {
           liff.login({
-            redirectUri: "Redirect URL",
+            redirectUri: "https://wasantedseeha.github.io/Google-Form",
           });
         }
       })
       .then((profile) => {
         window.location.replace(
-          `Paste Google Form URL and map your parameters here`
+          `https://docs.google.com/forms/d/e/1FAIpQLSc553IIvHHCeHo54huC8JPB87paKCPeTd7ss0ti6gRkfN0vKw/viewform?usp=pp_url&entry.1638401319=${profile.userId}&entry.1700158014=${profile.displayName}&entry.176398723=${profile.pictureUrl}&entry.1767206613=${profile.statusMessage}&entry.848177962=Tank+Belt+wash`
         );
       });
     liff.init(
